@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430" prefWidth="650" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BoardGUI">
+    <VBox prefHeight="400" prefWidth="30" spacing="0">
+        <Label styleClass="board-v-label" text="8">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-v-label" text="7">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-v-label" text="6">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-v-label" text="5">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-v-label" text="4">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-v-label" text="3">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-v-label" text="2">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-v-label" text="1">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+    </VBox>
+    <Canvas fx:id="canvas" height="400" layoutX="30" width="400"/>
+    <HBox layoutX="30" layoutY="400" prefHeight="30" prefWidth="400" spacing="0">
+        <Label styleClass="board-h-label" text="A">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-h-label" text="B">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-h-label" text="C">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-h-label" text="D">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-h-label" text="E">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-h-label" text="F">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-h-label" text="G">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+        <Label styleClass="board-h-label" text="H">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Label>
+    </HBox>
+    <Pane layoutX="450" opacity="0.9" prefHeight="400" prefWidth="200">
+        <children>
+            <Pane prefHeight="400" prefWidth="100">
+                <children>
+                    <Label fx:id="whiteLabel" layoutX="2" layoutY="2" prefHeight="25" prefWidth="97"
+                           styleClass="white-background, label, radius, border" text="WHITE">
+                    </Label>
+                    <TextArea fx:id="whiteOutput" editable="false" layoutX="2" layoutY="29" prefHeight="369"
+                              prefWidth="97">
+                        <font>
+                            <Font size="14"/>
+                        </font>
+                    </TextArea>
+                </children>
+            </Pane>
+            <Pane prefHeight="400" prefWidth="100">
+                <children>
+                    <Label fx:id="blackLabel" layoutX="101" layoutY="2" prefHeight="25" prefWidth="97"
+                           style="-fx-text-fill: white;" styleClass="black-background, label, radius, border"
+                           text="BLACK">
+                    </Label>
+                    <TextArea fx:id="blackOutput" editable="false" layoutX="101" layoutY="29" prefHeight="369"
+                              prefWidth="97">
+                        <font>
+                            <Font size="14"/>
+                        </font>
+                    </TextArea>
+                </children>
+            </Pane>
+        </children>
+        <styleClass>
+            <String fx:value="radius"/>
+            <String fx:value="gray-background"/>
+        </styleClass>
+    </Pane>
+</AnchorPane>

@@ -1,0 +1,43 @@
+.main-background {
+    -fx-background-color: #eee;
+}
+
+.gray-background {
+    -fx-background-color: gray;
+}
+
+.white-background {
+    -fx-background-color: white;
+}
+
+.black-background {
+    -fx-background-color: black;
+}
+
+.radius {
+    -fx-background-radius: 5;
+}
+
+.label {
+    -fx-alignment: center;
+    -fx-content-display: center;
+}
+
+.border {
+    -fx-border-color: linear-gradient(orangered, orange);
+    -fx-border-width: 3;
+}
+
+.board-v-label {
+    -fx-alignment: center;
+    -fx-content-display: center;
+    -fx-pref-height: 50;
+    -fx-pref-width: 30;
+}
+
+.board-h-label {
+    -fx-alignment: center;
+    -fx-content-display: center;
+    -fx-pref-height: 30;
+    -fx-pref-width: 50;
+}

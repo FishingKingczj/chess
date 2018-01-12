@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="680" prefWidth="850" styleClass="main-background" stylesheets="@application.css"
+            xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainGUI">
+
+    <HBox layoutX="50" layoutY="50" prefHeight="430" prefWidth="800" spacing="20">
+        <children>
+            <AnchorPane fx:id="boardContainer" prefHeight="430" prefWidth="650"/>
+            <VBox fx:id="menuBox" spacing="20" prefHeight="400" prefWidth="100">
+                <children>
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+    <TextArea fx:id="messageText" editable="false"
+              layoutX="80"
+              layoutY="510"
+              prefHeight="150" prefWidth="570"/>
+</AnchorPane>
